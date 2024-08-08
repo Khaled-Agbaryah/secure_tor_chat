@@ -16,7 +16,7 @@ just run 'sudo ./run_server.sh', it'll start the server over 443 port
 if you wish to change that, you can edit the end of the 'main.js' file
 
 you can also just create a cret to use https using 'sudo ./new_https_certs.sh'
-and then start the server using only 'sudo npm start'
+and then start the server using only 'sudo node main.js'
 
 # With Tor
 simply create a HiddenService, check the official tor website out to learn more
