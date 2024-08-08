@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>волк</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container1">
+        <header>
+            <h1>привет!</h1>
+        </header>
+        <main>
+            <p style="color: white;">Enter the passcode you agreed on with your friend:</p>
+            <form id="passcodeForm" onsubmit="event.preventDefault();">
+                <input type="text" id="nickname" name="nickname" placeholder="Enter Nick-Name">
+                <input type="password" id="passcode" name="passcode" placeholder="Enter Passcode">
+                <button type="submit" onclick="join_room()">join</button>
+            </form>
+            <p id="message"></p>
+        </main>
+    </div>
+    <div class="container" id="container2" hidden="true">
+        <header>
+            <h1>чат</h1>
+            <div id="chatStatus">Status: Pending</div>
+        </header>
+        <div id="chatMessages" class="chat-messages">
+            <!-- Each message container -->
+            <!-- <div class="chat-message sender">Sender's message content</div>
+            <div class="chat-message receiver">Receiver's message content</div> -->
+            <!-- Add more message containers as needed -->
+        </div>
+        
+        <div id="sendMessageArea">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button id="sendMessageBtn">send</button>
+            <button id="exitMessageBtn" onclick="exit_room()">exit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="chat-script.js"></script> -->
+</body>
+</html>
